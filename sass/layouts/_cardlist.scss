@@ -1,0 +1,49 @@
+.cardlist {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  text-align: center;
+}
+
+.cardlist__list {
+  display: flex;
+  & .item + .item {
+    margin-left: 30px;
+  }
+  & .title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  
+    color: var(--primary-text-color);
+  }
+  & .item {
+    width: 270px;
+    text-align: left;
+  }
+  
+  & .text {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+  }
+  
+}
+.cardlist__icon-item {
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  gap: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #f5f4fa;
+}
+.cardlist__icon-img {
+  align-items: center;
+  justify-content: center;
+}

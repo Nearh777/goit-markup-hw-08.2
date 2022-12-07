@@ -1,0 +1,130 @@
+.header {
+  border-bottom: 1px solid #ececec;
+  text-align: center;
+}
+
+
+.header__container {
+  display: flex;
+}
+.header__navigation {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  min-width: 145px;
+  outline: transparent;
+  color: var(--primary-text-color);
+}
+.logo__web {
+  color: var(--accent-color);
+  outline: transparent;
+}
+.logo__studio {
+  color: var(--color-logo-stodio);
+  outline: transparent;
+}
+
+
+.menu__list{
+  display: flex;
+  margin-left: 93px;
+  & .item + .item {
+    margin-left: 50px;
+  }
+}
+
+.menu__list .link {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  transition: color var(--trans);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    outline: transparent;
+  }
+  &.current {
+    color: var(--accent-color);
+  }
+  &.current::before {
+    content: '';
+    min-width: 48px;
+    height: 4px;
+    border-radius: 2px;
+    position: absolute;
+    top: 63px;
+    background-color: var(--accent-color);
+  }
+  &.current.portfolio::before {
+    content: '';
+    min-width: 78px;
+    height: 4px;
+    border-radius: 2px;
+    position: absolute;
+    top: 63px;
+    background-color: var(--accent-color);
+  }
+}
+
+/*.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}*/
+
+.contacts__list {
+  display: flex;
+  margin-left: auto;
+  & .item + .item {
+    margin-left: 50px;
+    gap: 10px;
+  }
+}
+
+.contacts__list .link {
+  display: flex;
+  margin-left: auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  align-items: center;
+  justify-content: center;
+  color: var(--title-text-color);
+  transition: color var(--trans);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    outline: transparent;
+  }
+}
+
+.contacts-email {
+ gap: 10px;
+}
+
+.contacts-email-icon {
+  align-items: center;
+  justify-content: center;
+  fill: currentColor;
+}
+
+.contacts-tel {
+ gap: 10px;
+}
+
+.contacts-tel-icon {
+  align-items: center;
+  justify-content: center;
+  fill: currentColor;
+}
+
