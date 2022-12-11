@@ -22,11 +22,16 @@ a {
   color: currentColor;
   text-decoration: none;
 }
+button {
+  cursor: pointer;
+  border: 0;
+}
 section {
   text-align: center;
 }
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }

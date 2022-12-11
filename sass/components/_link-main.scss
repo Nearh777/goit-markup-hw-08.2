@@ -2,10 +2,11 @@
 
   @include font(500, null, calc(16 / 14), 0.02em);
   color: var(--primary-text-color);
-  transition: color var(--trans);
+  
 
   &:hover,
   &:focus {
     color: var(--accent-color);
   }
+  transition: color var(--trans);
 }

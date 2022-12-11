@@ -1,11 +1,11 @@
 .header {
-  //position: fixed;
-  //top: 0;
-  //left: 0;
-  //right: 0;
-  //z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
 
-  background-color: inherit;
+  background-color: #ffffff;
   border-bottom: 1px solid #ececec;
 
   &__container {
@@ -166,7 +166,7 @@
 
 .mob-contacts {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   gap: 16px;
   margin-bottom: 32px;
   @include mobile {
@@ -189,6 +189,7 @@
       @include font(null, 34px, calc(40 / 34), null);
     }
   }
+  outline: transparent;
 }
 
 .mob-soc-list {
